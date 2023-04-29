@@ -39,6 +39,7 @@
         
     }
     ?>
+    <center>
     <form action="" method="POST">
         <h1>Chỉnh sửa sản phẩm</h1>
             <div>
@@ -52,9 +53,9 @@
             </div>
             <div>
                 <button type="submit" name='edit' value="edit">Cập nhật</button>
-                <button type="reset">Reset</button>
                 <a href="HomeSP.php"><button type="button">Cancel</button></a>
             </div>
     </form>
+</center>
 </body>
 </html>

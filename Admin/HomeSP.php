@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADD</title>
+    <title>Home</title>
     <style type="text/css">
             table{
                 width: 800px;
@@ -54,6 +54,7 @@
                             echo'
                             <tr>
                                 <td>'.$row['id'].'</td>
+                                <td>'.$row['categories_id'].'</td>
                                 <td>'.$row['name'].'</td>
                                 <td>'.$row['price'].'</td>
                                 <td>'.$row['brand'].'</td>
@@ -66,7 +67,7 @@
             ?>
             <tfoot>
                     <td colspan="8">
-                        <a href="add.php"><button id="button">Thêm cầu thủ</button></a>
+                        <a href="AddSP.php"><button id="button">Thêm sản phẩm</button></a>
                     </td>
             </tfoot>
         </table>
