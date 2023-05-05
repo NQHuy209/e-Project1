@@ -58,8 +58,8 @@
                                 <td>'.$row['name'].'</td>
                                 <td>'.$row['price'].'</td>
                                 <td>'.$row['brand'].'</td>
-                                <td><a href="EditSP.php?id='.$row['id'].'">Edit</a></td>
-                                <td><a href="delete.php?id='.$row['id'].'"> Delete</a></td>
+                                <td><a href="controller/EditSP.php?id='.$row['id'].'">Edit</a></td>
+                                <td><a href="controller/DeleteSP.php?id='.$row['id'].'"> Delete</a></td>
                             </tr>';
                         }
                     }
@@ -67,7 +67,7 @@
             ?>
             <tfoot>
                     <td colspan="8">
-                        <a href="AddSP.php"><button id="button">Thêm sản phẩm</button></a>
+                        <a href="controller/AddSP.php"><button id="button">Thêm sản phẩm</button></a>
                     </td>
             </tfoot>
         </table>
