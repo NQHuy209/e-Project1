@@ -1,0 +1,161 @@
+html,body{
+  background-image: url('https://i.pinimg.com/736x/7f/43/c8/7f43c8c1617903358ad217f1c88037e1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  font-family: 'Numans', sans-serif;
+  }
+ 
+  img {
+    height: 200px;
+    width: 200px;
+    margin-top: -50px;
+    border-style: none;
+  }
+  .container{
+  height: 100%;
+  align-content: center;
+  }
+  
+  .card{
+  height: auto;
+  margin-top: -130px;
+  width: 480px;
+  background-color: rgba(0,0,0,0.8) !important;
+  }
+  
+  .card-header h1{
+  color: white;
+  text-align: center;
+  }
+
+ .social_icon{
+  position: absolute;
+  right: 20px;
+  top: -45px;
+  }
+
+  .input-group-prepend {
+    margin-right: -4px;
+}
+  
+  .input-group-prepend span{
+  width: 45px;
+  background-color: grey;
+  color: black;
+  border:0 !important;
+  float: left;
+  font-size: 20px;
+  }
+  
+  input:focus{
+  outline: 0 0 0 0  !important;
+  box-shadow: 0 0 0 0 !important;
+}
+  
+  .login_btn{
+  color: black;
+  background-color: #3970B0;
+  width: 100px;
+  }
+  
+  .login_btn:hover{
+  color: black;
+  background-color: white;
+  }
+  
+  .links{
+  color: white;
+  font-size: 23px;
+  margin-bottom: 6px;
+  }
+  
+  .links a{
+  margin-left: 4px;
+  }
+  
+  .login_input{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: green;
+    width: 120px;
+  }
+
+  .checkbox {
+    font-size: 120%;
+    color: white;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-top: 20px;
+  }
+
+  .forgot {
+    float: right;
+    text-align: center;
+    margin-top: -44px;
+  }
+
+  .forgot a {
+      color: white;
+      font-size: 120%;
+  }
+
+  .forgot a:hover{
+      color: #155daf;
+      text-decoration: underline;
+  }
+
+
+  .input-group {
+      position: relative;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      width: 93%;
+  }
+
+
+  .btn-warning {
+    background: #3970B0;
+    color: white;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 25px;
+    font-weight: bold;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+   }
+
+   .btn-warning:hover {
+    background: #155daf;
+    color: white;
+  }
+
+  .h-100 {
+    height: 100%!important;
+    margin-top: 100px;
+}
+
+.card-footer {
+  padding: 0.75rem 1.25rem;
+  background-color: rgba(0,0,0,.03);
+  border-top: 1px solid rgba(0,0,0,.125);
+  margin-top: -10px;
+}
+
+element.style {
+  font-size: 175%;
+  padding-top: 5px;
+  padding-left: 13px;
+}
+
