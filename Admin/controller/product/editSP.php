@@ -24,7 +24,7 @@
                     "', brand = '" . $_POST['brand'] .
                     "' WHERE ID = " . $_GET['id'];
                     mysqli_query($con,$sql);
-                    header('location:HomeSP.php');
+                    header('location:homeSP.php');
             }
             
         
@@ -44,7 +44,7 @@
             </div>
             <div>
                 <button type="submit" name='edit' value="edit">Cập nhật</button>
-                <a href="HomeSP.php"><button type="button">Cancel</button></a>
+                <a href="homeSP.php"><button type="button">Cancel</button></a>
             </div>
     </form>
 </center>

@@ -1,16 +1,16 @@
 <?php
     include "./sidebar.php";
     include_once "config/connect_db.php";
-    include "controller/QLCategories.php";
 ?>
 <div class="content">
-  <h3>Category Items</h3>
   <table class="table ">
+    <h2>Category Items</h2>
     <thead>
       <tr>
-        <th class="text-center">S.N.</th>
-        <th class="text-center">Category Name</th>
-        <th class="text-center" colspan="2">Action</th>
+        <th>CategoriesID</th>
+        <th>Tên Sản Phẩm</th>
+        <th>Edit</th>
+        <th>Delete</th>
       </tr>
     </thead>
     <?php
@@ -25,9 +25,18 @@
               <tr>
                   <td>'.$row['id'].'</td>
                   <td>'.$row['name'].'</td>
-                  <td><a href="?id='.$row['id'].'"> Delete</a></td>
+                  <td><a href="controller/categories/deleteCategories?id='.$row['id'].'"> Delete</a></td>
+                  <td><a href="controller/categories/editCategories?id='.$row['id'].'"> Edit</a></td>
               </tr>';
           }
       }
     ?>
+    <tfoot>
+      <td>
+        <a href="controller/categories/addCategories.php"><button id="button">ADD</button></a>
+      </td>
+    </tfoot>
+    
+    
+    
     

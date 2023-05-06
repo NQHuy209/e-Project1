@@ -14,7 +14,7 @@
 <body>
     <div class="content">
         <?php
-            include_once "controller/HomeSP.php";
+            include_once "controller/product/homeSP.php";
         ?>
     </div>
     

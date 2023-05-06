@@ -29,7 +29,7 @@
         </style>
 </head>
 <body>
-   <table style="border: 1px solid">
+   <table class="table ">
             <h1>Quản lý sản phẩm</h1>
             <thead>
                 <th>ID</th>
@@ -58,8 +58,8 @@
                                 <td>'.$row['name'].'</td>
                                 <td>'.$row['price'].'</td>
                                 <td>'.$row['brand'].'</td>
-                                <td><a href="EditSP.php?id='.$row['id'].'">Edit</a></td>
-                                <td><a href="delete.php?id='.$row['id'].'"> Delete</a></td>
+                                <td><a href="controller/product/editSP.php?id='.$row['id'].'">Edit</a></td>
+                                <td><a href="controller/product/deleteSP.php?id='.$row['id'].'"> Delete</a></td>
                             </tr>';
                         }
                     }
@@ -67,7 +67,7 @@
             ?>
             <tfoot>
                     <td colspan="8">
-                        <a href="AddSP.php"><button id="button">Thêm sản phẩm</button></a>
+                        <a href="controller/product/addSP.php"><button id="button">Thêm sản phẩm</button></a>
                     </td>
             </tfoot>
         </table>

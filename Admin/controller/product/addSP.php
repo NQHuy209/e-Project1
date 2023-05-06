@@ -1,24 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADD</title>
-</head>
-<body>
-    <?php
+<?php
     $errors = array();
-        function connect()
-        {
-            $conn = mysqli_connect('localhost', 'root', '12345678', 'project');
-            if (!$conn) {
-                    die("Kết nối thất bại: " . $conn);
-                }
-            return $conn;
-        }
+    $conn = mysqli_connect('localhost', 'root', '12345678', 'project');
     
-        if (!empty($_POST['add']))
+    if (!empty($_POST['add']))
         {
             if ($_POST['price'] < 0 ) {
                 $errors['price'] = "Giá không hợp lệ!";
@@ -38,7 +22,7 @@
                 $price = $_POST['price'];
                 $brand = $_POST['brand'];
             if ($stmt->execute() === TRUE) {
-                    echo "Thêm sản phẩm thành công <a href='HomeSP.php'>đây</a> để về trang danh sách</h1>";
+                    echo "Thêm sản phẩm thành công <a href='homeSP.php'>đây</a> để về trang danh sách</h1>";
                 }else{
                     echo "<h1>Có lỗi xảy ra</h1>";
                 }
@@ -62,8 +46,6 @@
             </div>
             <div>
                 <input type="submit" name='add' value='Add'>
-                <a href="HomeSP.php"><button type="button">Cancel</button></a>
+                <a href="homeSP.php"><button type="button">Cancel</button></a>
             </div>
     </form>
-</body>
-</html>
