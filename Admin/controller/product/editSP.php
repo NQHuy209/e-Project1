@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit</title>
-</head>
-<body>
-    <?php 
+<?php 
             $con = mysqli_connect('localhost', 'root', '12345678', 'project');
             $sql="SELECT * FROM product";
             $result=mysqli_query($con,$sql);
@@ -33,12 +24,13 @@
                     "', brand = '" . $_POST['brand'] .
                     "' WHERE ID = " . $_GET['id'];
                     mysqli_query($con,$sql);
-                    header('location:HomeSP.php');
+                    header('location:homeSP.php');
             }
             
         
     }
     ?>
+    <center>
     <form action="" method="POST">
         <h1>Chỉnh sửa sản phẩm</h1>
             <div>
@@ -52,9 +44,7 @@
             </div>
             <div>
                 <button type="submit" name='edit' value="edit">Cập nhật</button>
-                <button type="reset">Reset</button>
-                <a href="HomeSP.php"><button type="button">Cancel</button></a>
+                <a href="homeSP.php"><button type="button">Cancel</button></a>
             </div>
     </form>
-</body>
-</html>
+</center>

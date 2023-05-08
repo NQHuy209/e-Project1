@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADD</title>
+    <title>Home</title>
     <style type="text/css">
             table{
                 width: 800px;
@@ -29,7 +29,7 @@
         </style>
 </head>
 <body>
-   <table style="border: 1px solid">
+   <table class="table ">
             <h1>Quản lý sản phẩm</h1>
             <thead>
                 <th>ID</th>
@@ -54,11 +54,12 @@
                             echo'
                             <tr>
                                 <td>'.$row['id'].'</td>
+                                <td>'.$row['categories_id'].'</td>
                                 <td>'.$row['name'].'</td>
                                 <td>'.$row['price'].'</td>
                                 <td>'.$row['brand'].'</td>
-                                <td><a href="EditSP.php?id='.$row['id'].'">Edit</a></td>
-                                <td><a href="delete.php?id='.$row['id'].'"> Delete</a></td>
+                                <td><a href="controller/product/editSP.php?id='.$row['id'].'">Edit</a></td>
+                                <td><a href="controller/product/deleteSP.php?id='.$row['id'].'"> Delete</a></td>
                             </tr>';
                         }
                     }
@@ -66,7 +67,7 @@
             ?>
             <tfoot>
                     <td colspan="8">
-                        <a href="add.php"><button id="button">Thêm cầu thủ</button></a>
+                        <a href="controller/product/addSP.php"><button id="button">Thêm sản phẩm</button></a>
                     </td>
             </tfoot>
         </table>
