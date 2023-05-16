@@ -465,9 +465,9 @@
 													</span>
 												</a>
 											</li>
-											<!-- <li class="nav-item  has-mega">
-												<a class="a-img" href="/collections/all">
-													<span>Sản phẩm</span><i class="fa fa-caret-down"></i>
+											<li class="nav-item ">
+												<a class="a-img" href="category.php">
+													<span>Sản phẩm</span>
 													<span class="label_">
 
 														<i class="label "></i>
@@ -475,114 +475,7 @@
 													</span>
 												</a>
 
-												<div class="mega-content">
-													<div class="level0-wrapper2">
-														<div class="nav-block nav-block-center">
-															<ul class="level0">
-
-
-																<li class="level1 parent item">
-																	<h2 class="h4"><a href="/dien-thoai"
-																			title="Điện thoại"><span>Điện
-																				thoại</span></a></h2>
-																	<ul class="level1">
-
-																		<li class="level2"> <a href="/apple"
-																				title="Apple"><span>Apple</span></a>
-																		</li>
-
-																		<li class="level2"> <a href="/samsung"
-																				title="Samsung"><span>Samsung</span></a>
-																		</li>
-
-																		<li class="level2"> <a href="/huawei"
-																				title="Huawei"><span>Huawei</span></a>
-																		</li>
-
-																		<li class="level2"> <a href="/oppo"
-																				title="Oppo"><span>Oppo</span></a> </li>
-
-																		<li class="level2"> <a href="/"
-																				title="Giới thiệu"><span>Giới
-																					thiệu</span></a> </li>
-
-																	</ul>
-																</li>
-
-
-
-																<li class="level1 parent item">
-																	<h2 class="h4"><a href="/do-an"
-																			title="Đồ ăn"><span>Đồ ăn</span></a></h2>
-																	<ul class="level1">
-
-																		<li class="level2"> <a href="/thuc-pham-kho"
-																				title="Thực phẩm khô"><span>Thực phẩm
-																					khô</span></a> </li>
-
-																		<li class="level2"> <a href="/giai-khat"
-																				title="Giải khát"><span>Giải
-																					khát</span></a> </li>
-
-																	</ul>
-																</li>
-
-
-
-																<li class="level1 item">
-																	<h2 class="h4"><a href="/do-dien-khac"
-																			title="Đồ điện tử"><span>Đồ điện
-																				tử</span></a> </h2>
-
-
-
-																<li class="level1 item">
-																	<h2 class="h4"><a href="/me-va-be"
-																			title="Mẹ và bé"><span>Mẹ và bé</span></a>
-																	</h2>
-
-
-
-																<li class="level1 item">
-																	<h2 class="h4"><a href="/thoi-trang"
-																			title="Thời trang"><span>Thời
-																				trang</span></a> </h2>
-
-
-
-																<li class="level1 item">
-																	<h2 class="h4"><a href="/giai-khat"
-																			title="Giải khát"><span>Giải khát</span></a>
-																	</h2>
-
-
-
-																<li class="level1 item">
-																	<h2 class="h4"><a href="/thuc-pham-kho"
-																			title="Thực phẩm khô"><span>Thực phẩm
-																				khô</span></a> </h2>
-
-
-
-																<li class="level1 item">
-																	<h2 class="h4"><a href="/suc-khoe"
-																			title="Sức khỏe"><span>Sức khỏe</span></a>
-																	</h2>
-
-
-
-																<li class="level1 item">
-																	<h2 class="h4"><a href="/phu-kien"
-																			title="Phụ kiện"><span>Phụ kiện</span></a>
-																	</h2>
-
-
-															</ul>
-														</div>
-													</div>
-												</div>
-
-											</li> -->
+											</li>
 											<!-- <li class="nav-item ">
 												<a class="a-img" href="/tin-tuc">
 													<span>Tin tức</span><i class="fa fa-caret-down"></i>

@@ -5204,6 +5204,7 @@ button.close {
 }
 
 .awe-section-1 {
+    margin-top: 196px;
     margin-bottom: 70px
 }
 
@@ -10588,6 +10589,7 @@ ul#cart-sidebar li.list-item::-webkit-scrollbar-thumb:active {
 }
 
 .bread-crumb {
+    margin-top: 196px;
     background: #f5f5f5;
     margin-bottom: 40px
 }
@@ -12601,3 +12603,8 @@ h1.title_head.left.after,
     border: 0 none;
 }
 
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+}

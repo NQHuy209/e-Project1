@@ -2,11 +2,6 @@
 	require "header.php";
 ?>
 
-		
-
-
-		<h1 class="hidden">La Imperial - 123</h1>
-
 
 		<section class="awe-section-1">
 			<!-- <section class="section_slider">
