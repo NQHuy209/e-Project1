@@ -1,7 +1,7 @@
 <?php
 require "connect_db.php";
     $addToUser = false;
-    if (isset($_POST['register']) || isset($_POST['addUser']))
+    if (isset($_POST['register']))
     {
         $temp = 0;
         $error = array();
@@ -63,21 +63,7 @@ require "connect_db.php";
             $sql = "INSERT INTO users ( username, password, fullname, phone_number, address, email, role_id) VALUES (?, ?, ?, ?, ?, ?, ?)";
             $stmt = $conn->prepare($sql);
             $stmt->bind_param("ssssssi", $user, $pass, $name, $phone, $address, $email, $role);
-            if (isset($_POST['register']))
-            {
-                $role = 2;
-            }
-            if (isset($_POST['addUser']))
-            {
-                if ($_POST['role'] == 'admin')
-                {
-                    $role = 1;
-                }
-                if ($_POST['role'] == 'user')
-                {
-                    $role = 2;
-                }
-            }
+            $role = 2;
             $name = $_POST['fullname'];
             $user = $_POST['username'];
             $pass = md5($_POST['password']);
@@ -86,15 +72,8 @@ require "connect_db.php";
             $address = $_POST['address'];
             if ($stmt->execute())
             {
-                header('location:login.php');
-            }
-            if (isset($_POST['register']))
-            {
                 $addToUser = true;
-            }
-            if (isset($_POST['addUser']))
-            {
-                header('');
+                header('location:login.php');
             }
             $stmt->close();
         }

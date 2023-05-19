@@ -57,60 +57,11 @@
 	<!-- Build Main CSS -->
 	<link href="css/scss2.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/scss.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="stylecart.css">
 
 	<script src="http://bizweb.dktcdn.net/100/351/180/themes/713646/assets/jquery.js?1677115832170"
 		type="text/javascript"></script>
-	<!-- Bizweb javascript customer -->
-
-	<!-- <script>
-		var template = 'index';			 
-	</script>  -->
-	<!-- Bizweb conter for header -->
-	<!-- <script>
-		var Bizweb = Bizweb || {};
-		Bizweb.store = 'nd-mart.mysapo.net';
-		Bizweb.id = 351180;
-		Bizweb.theme = { "id": 713646, "name": "Giao diện chính", "role": "main" };
-		Bizweb.template = 'index';
-		if (!Bizweb.fbEventId) Bizweb.fbEventId = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-			var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
-			return v.toString(16);
-		});		
-	</script> -->
-	<!-- <script>
-		(function () {
-			function asyncLoad() {
-				var urls = ["https://google-shopping.sapoapps.vn/conversion-tracker/global-tag/6003.js?store=nd-mart.mysapo.net", "https://google-shopping.sapoapps.vn/conversion-tracker/event-tag/6003.js?store=nd-mart.mysapo.net"];
-				for (var i = 0; i < urls.length; i++) {
-					var s = document.createElement('script');
-					s.type = 'text/javascript';
-					s.async = true;
-					s.src = urls[i];
-					var x = document.getElementsByTagName('script')[0];
-					x.parentNode.insertBefore(s, x);
-				}
-			};
-			window.attachEvent ? window.attachEvent('onload', asyncLoad) : window.addEventListener('load', asyncLoad, false);
-		})();
-	</script> -->
-
-
-	<!-- <script>
-		window.BizwebAnalytics = window.BizwebAnalytics || {};
-		window.BizwebAnalytics.meta = window.BizwebAnalytics.meta || {};
-		window.BizwebAnalytics.meta.currency = 'VND';
-		window.BizwebAnalytics.tracking_url = '/s';
-
-		var meta = {};
-
-
-		for (var attr in meta) {
-			window.BizwebAnalytics.meta[attr] = meta[attr];
-		}
-	</script> -->
-
-
-		<script src="/dist/js/stats.min.js?v=69e02f0"></script>
+	<script src="/dist/js/stats.min.js?v=69e02f0"></script>
 
 
 
@@ -145,7 +96,7 @@
 								<?php
 									if (isset($_SESSION['user']))
 									{
-										echo '<li style="color:white">Hello <a href="">' . $_SESSION['user']['username'] . '</a></li>';
+										echo '<li style="color:white">Hello <a href="user.php">' . $_SESSION['user']['username'] . '</a></li>';
 									}
 									else
 									{
@@ -214,7 +165,17 @@
 							<div class="top-cart-contain f-right">
 								<div class="mini-cart text-xs-center">
 									<div class="heading-cart">
-										<a href="/cart" title="Giỏ hàng">
+									<?php
+
+										if (isset($_SESSION['cart'])){
+											$count = count($_SESSION['cart']);
+											echo "<span id=\"cart_count\" class=\"text-warning bg-light\">$count</span>";
+										}else{
+											echo "<span id=\"cart_count\" class=\"text-warning bg-light\">0</span>";
+										}
+
+										?>
+										<a href="cart.php" title="Giỏ hàng">
 											<img src="http://bizweb.dktcdn.net/100/351/180/themes/713646/assets/icon_cart.png?1677115832170"
 												alt="La Imperial" />
 											<span class="cartCount count_item_pr" id="cart-total"></span>
@@ -306,35 +267,6 @@
 											<a href="category.php?id=1" title="Fridge">Fridge
 												<!-- <i class="fa fa-angle-right"></i> -->
 											</a>
-
-											<!-- <ul class="ul_content_right_1 row">
-
-
-												<li class="nav_item lv2 col-lg-3 col-md-3"><a href="/apple"
-														title="Apple">Apple</a></li>
-
-
-
-												<li class="nav_item lv2 col-lg-3 col-md-3"><a href="/samsung"
-														title="Samsung">Samsung</a></li>
-
-
-
-												<li class="nav_item lv2 col-lg-3 col-md-3"><a href="/huawei"
-														title="Huawei">Huawei</a></li>
-
-
-
-												<li class="nav_item lv2 col-lg-3 col-md-3"><a href="/oppo"
-														title="Oppo">Oppo</a></li>
-
-
-
-												<li class="nav_item lv2 col-lg-3 col-md-3"><a href="/"
-														title="Giới thiệu">Giới thiệu</a></li>
-
-
-											</ul> -->
 										</li>
 
 
@@ -345,20 +277,6 @@
 											<a href="category.php?id=2" title="Dishwasher">Dishwasher
 												<!-- <i class="fa fa-angle-right"></i> -->
 											</a>
-
-											<!-- <ul class="ul_content_right_1 row">
-
-
-												<li class="nav_item lv2 col-lg-3 col-md-3"><a href="/thuc-pham-kho"
-														title="Thực phẩm khô">Thực phẩm khô</a></li>
-
-
-
-												<li class="nav_item lv2 col-lg-3 col-md-3"><a href="/giai-khat"
-														title="Giải khát">Giải khát</a></li>
-
-
-											</ul> -->
 										</li>
 
 
@@ -401,40 +319,7 @@
 
 
 
-										<!-- <li class="nav_item lv1 li_check">
-											<a href="/thuc-pham-kho" title="Thực phẩm khô">Thực phẩm khô
-											</a>
-										</li>
-
-
-
-
-
-										<li class="nav_item lv1 li_check">
-											<a href="/suc-khoe" title="Sức khỏe">Sức khỏe
-											</a>
-										</li>
-
-
-
-
-
-										<li class="nav_item lv1 li_check">
-											<a href="/phu-kien" title="Phụ kiện">Phụ kiện
-											</a>
-										</li> -->
-
-
-										<!-- <li class="lev-1 xemthem hidden-lgg nav_item clearfix ">
-											<a href="javascript:;">
-												Xem thêm
-											</a>
-										</li> -->
-										<!-- <li class="lev-1 thugon hidden-lgg nav_item clearfix ">
-											<a href="javascript:;">
-												Thu gọn
-											</a>
-										</li> -->
+										
 
 									</ul>
 								</div>
@@ -455,16 +340,7 @@
 													</span>
 												</a>
 											</li>
-											<li class="nav-item ">
-												<a class="a-img" href="/gioi-thieu">
-													<span>Giới thiệu</span>
-													<span class="label_">
-
-														<i class="label "></i>
-
-													</span>
-												</a>
-											</li>
+											
 											<li class="nav-item ">
 												<a class="a-img" href="category.php">
 													<span>Sản phẩm</span>
@@ -476,36 +352,7 @@
 												</a>
 
 											</li>
-											<!-- <li class="nav-item ">
-												<a class="a-img" href="/tin-tuc">
-													<span>Tin tức</span><i class="fa fa-caret-down"></i>
-													<span class="label_">
-
-														<i class="label "></i>
-
-													</span>
-												</a>
-
-												<ul class="item_small">
-
-													<li>
-														<a href="/tin-tuc-khuyen-mai" title="">Tin tức khuyến mãi </a>
-
-													</li>
-
-													<li>
-														<a href="/tin-tuc-noi-bat" title="">Tin tức nổi bật </a>
-
-													</li>
-
-													<li>
-														<a href="/tin-tuc-moi-nhat" title="">Tin tức mới nhất </a>
-
-													</li>
-
-												</ul>
-
-											</li> -->
+											
 											<li class="nav-item ">
 												<a class="a-img" href="contact.php">
 													<span>Liên hệ</span>
@@ -516,6 +363,18 @@
 													</span>
 												</a>
 											</li>
+
+											<li class="nav-item ">
+												<a class="a-img" href="compare.php">
+													<span>So sánh</span>
+													<span class="label_">
+
+														<i class="label "></i>
+
+													</span>
+												</a>
+											</li>
+
 
 
 										</ul>

@@ -13,8 +13,7 @@
 	
 </head>
 <body>
-
-	<img src="https://cdn.freebiesupply.com/logos/large/2x/imperial-1-logo-png-transparent.png">
+<img src="images/logo.png">
 
 <div class="container">
 	<div class="d-flex justify-content-center h-100">
@@ -24,7 +23,7 @@
 				
 			</div>
 			<div class="card-body">
-                <center>
+            <center>
 				<form action="" method="post">
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
@@ -41,19 +40,14 @@
 					</div>
 					<p style="color:red;"><?php echo isset($error['password']) ? $error['password'] : null ?></p>
 			</center>
-			
-					<div class="checkbox">
+					<div  class="checkbox">
 						<input type="checkbox">
 						<span>Remember me</span>
 					</div>
-					
-					
-					
-            <center>
+			<center>
 					<div class="form-group">
 						<input type="submit" name="login" value="Login" class="btn btn-warning login_input" >
 					</div>
-				</form>
             </center>
 			</div>
 

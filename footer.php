@@ -1,37 +1,9 @@
+<div id="backtop">
+    <i class="fa-sharp fa-solid fa-chevron-up"></i>
+</div>
 <footer class="footer clearfix">
-			 <div class="top-footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12 col-md-9 col-sm-12 col-xs-12">
-							<div class="text-subscribe">
-								<!-- <i class="fa fa-envelope-o"></i> -->
-								<div class="text">
-									<h3>
-										Đăng ký nhận tin
-									</h3>
-									<p>
-										Đăng ký để nhận thông tin khuyến mãi
-									</p>
-								</div>
-							</div>
-							<div class="form_km">
-
-
-
-								<form
-									action="https://sapo.us19.list-manage.com/subscribe/post?u=2887dcda77021868cccd236ea&id=7ace19f37b"
-									method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-									target="_blank">
-									<input type="email" value="" placeholder="Nhập email của bạn..." name="EMAIL"
-										id="mail" aria-label="general.newsletter_form.newsletter_email" required>
-									<button class="button_subscribe subscribe" name="subscribe" id="subscribe">Đăng
-										ký</button>
-								</form>
-							</div>
-						</div>
-						
-					</div>
-				</div>
+			 <div class="top-footer" style="padding-bottom: 50px">
+				
 			</div>
 			<div class="middle-footer">
 				<div class="container">
@@ -43,7 +15,7 @@
 							<h4 class="cliked">Siêu thị trực tuyến La Imperial</h4>
 							<div class="toggle-mn">
 								<div class="footer-detail rte">
-									Siêu thị trực tuyến La Imperial được thành lập ngày 11/05/2023. Trải qua hơn nửa tháng
+									Siêu thị trực tuyến La Imperial được thành lập ngày 17/04/2023. Trải qua hơn một tháng
 									hoạt động, La Imperial đã có những bước phát triển mạnh mẽ.
 								</div>
 								<ul>
@@ -53,7 +25,7 @@
 									<li><i class="fa fa-phone" aria-hidden="true"></i> <span
 											>0922552868</span></li>
 									<li><i class="fa fa-envelope" aria-hidden="true"></i> <span
-											>hoangtrongcuong1104@gmail.com</span></li>
+											>aptech54ltn@gmail.com</span></li>
 
 								</ul>
 							</div>
@@ -68,7 +40,7 @@
 
 										<li><a class="ef" href="index.php" title="Trang chủ">Trang chủ</a></li>
 
-										<li><a class="ef" href="" title="Giới thiệu">Giới thiệu</a></li>
+										<li><a class="ef" href="category.php" title="Sản phẩm">Sản Phẩm</a></li> 
 
 										<li><a class="ef" href="contact.php" title="Liên hệ">Liên hệ</a></li> 
 
@@ -181,35 +153,36 @@
 
 
 
-
+							
+							<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+							<script>
+								$(document).ready(function()
+									{
+										$(window).scroll(function()
+										{
+											if ($(this).scrollTop())
+											{
+												$('#backtop').fadeIn();
+											}
+											else
+											{
+												$('#backtop').fadeOut();
+											}
+										});
+										$('#backtop').click(function()
+										{
+											$('html, body').animate({
+												scrollTop: 0
+											}, 500);
+										});
+									})
+							</script>		 						
+						
 					</div>
 
 				</div>
 			</div>
-			<!-- <div class="bottom-footer">
-				<div class="container">
-					<div class="row row_footer">
-						<div id="copy1" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-							<div class="row tablet">
-								<div id="copyright"
-									class="col-lg-12 col-md-12 col-sm-12 col-xs-12 fot_copyright a-center">
-									Bản quyền thuộc về <span class="banquyen">ND Team</span> |
-									<span class="wsp">
-										<span class="mobile">Cung cấp bởi
+			
 
-											<a href="https://www.sapo.vn/?utm_campaign=cpn:kho_theme-plm:footer&utm_img=Tu_nhien&utm_medium=referral&utm_content=fm:text_link-km:-sz:&utm_term=&campaign=kho_theme-sapo"
-												rel="nofollow" title="Sapo" target="_blank">Sapo</a>
-
-										</span>
-									</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> -->
-
-			<a href="#" id="back-to-top" class="back-to-top" title="Lên đầu trang"><i class="fa fa-angle-up"></i></a>
-
-
-		</footer>
+			
+</footer>

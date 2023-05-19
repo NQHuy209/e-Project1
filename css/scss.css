@@ -10539,25 +10539,22 @@ ul#cart-sidebar li.list-item::-webkit-scrollbar-thumb:active {
     color: #d03a3a
 }
 
-#back-to-top {
-    position: fixed;
-    top: initial !important;
-    right: 15px;
-    bottom: 20px;
-    z-index: 9999;
-    background: #d03a3a;
+#backtop {
     width: 50px;
     height: 50px;
-    text-align: center;
-    line-height: 50px;
-    color: #fff;
-    border-radius: 100%;
-    display: none
+    background: #eb3e32;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    cursor: pointer;
 }
 
-.back-to-top.show {
-    display: block
-}
+
 
 .breadcrumb_background {
     background-size: cover;

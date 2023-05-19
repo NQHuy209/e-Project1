@@ -3,6 +3,7 @@
     line-height: 2.15;
     padding-left: 12px;
     padding-right: 12px;
+    margin-top: 10px;
 }
 
 .card-registration .select-arrow {
@@ -15,11 +16,12 @@
 
 .background-custom {
 
-    background-image: url("https://media3.gaggenau.com/Images/600x/17815225_homepage-website-400series-downdraft-stage-vp1.jpg");
+    background-image: url("");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    margin-top: 196px;
 
 }
 

@@ -29,7 +29,6 @@
 						{
 							$result = mysqli_query($conn, "SELECT * FROM product WHERE categories_id = " . $_GET['id'] . " ORDER BY id DESC LIMIT 6 OFFSET " . $offset);
 							$result1 = mysqli_query($conn, "SELECT * FROM product WHERE categories_id = " . $_GET['id'] . " ORDER BY id DESC");
-
 							$result2 = mysqli_query($conn, "SELECT * FROM categories WHERE id = ". $_GET['id']);
 							$category = mysqli_fetch_assoc($result2);
 
@@ -52,6 +51,22 @@
 
 							echo
 							'<li><strong ><span> Tìm kiếm</span></strong></li>
+							</ul></div></div></div></section>  
+			
+							<div class="container">
+								<div class="row">					
+									<section class="main_container collection col-lg-12 col-md-12 col-sm-12">
+										<h1 class="title_page absolute margin-top-0 hidden-xs">Tìm kiếm</h1>
+										<br>			
+										<div class="category-products products">';
+						}
+						else if (isset($_GET['brand']))
+						{
+							$result = mysqli_query($conn, "SELECT * FROM product WHERE brand = '" . $_GET['brand'] . "' ORDER BY id DESC LIMIT 6 OFFSET " . $offset);
+							$result1 = mysqli_query($conn, "SELECT * FROM product WHERE brand = '" . $_GET['brand'] . "' ORDER BY id DESC");
+
+							echo
+							'<li><strong ><span> ' . $_GET['brand'] . '</span></strong></li>
 							</ul></div></div></div></section>  
 			
 							<div class="container">
@@ -91,7 +106,7 @@
 										</div>
 										<h3 class="product-name">' . $row['name'] . '</h3>
 											<div class="product-item-price price-box">
-												<strong>' . $row['price'] . 'đ</strong>
+												<strong>' . number_format($row['price']) . 'đ</strong>
 											</div>
 									</div>
 								</div>';

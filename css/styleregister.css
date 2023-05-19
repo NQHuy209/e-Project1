@@ -6,13 +6,12 @@ html,body{
   font-family: 'Numans', sans-serif;
   }
   
-  img {
-      vertical-align: middle;
-      border-style: none;
-      width: 200px;
-      height: 200px;
-      margin-top: -50px;
-  }
+img {
+    height: 160px;
+    width: 210px;
+    margin-top: 7px;
+    border-style: none;
+}
 
   .container{
   height: auto;
@@ -21,7 +20,7 @@ html,body{
   
   .card{
   height: auto;
-  margin-top: -105px;
+  margin-top: -130px;
   margin-bottom: auto;
   width: 480px;
   background-color: rgba(0,0,0,0.8) !important;
