@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="css/styleregister.css">
 </head>
 <body>
-
-    <img src="images/logo.png">
     
 <div class="container">
     <div class="d-flex justify-content-center h-100">
@@ -76,13 +74,6 @@
                     </div>
                     <p style="color:red;"><?php echo isset($error['email']) ? $error['email'] : null ?></p>
 
-					<div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-user" style="font-size: 120%;"></i></span>
-						</div>
-						<input type="text" name="Role" class="form-control" placeholder="Role" value="<?php echo isset($_POST['Role']) ? $_POST['Role'] : '';?>">
-					</div>
-                    
                     <div class="form-group">
 						<input type="submit" name="register" value="Register" class="btn btn-warning login_input">
 					</div>

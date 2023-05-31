@@ -48,7 +48,7 @@
 			<div class="col-xs-12 a-left">
 				<ul class="breadcrumb">					
 					<li class="home">
-						<a itemprop="url" href="/" ><span title="Trang chủ">Trang chủ</span></a>						
+						<a itemprop="url" href="index.php" ><span title="Trang chủ">Trang chủ</span></a>						
 						<span class="mr_lr">&nbsp;/&nbsp;</span>
 					</li>
 					

@@ -1,9 +1,10 @@
 html,body{
-  background-image: url('https://i.pinimg.com/736x/7f/43/c8/7f43c8c1617903358ad217f1c88037e1.jpg');
+  background-image: url('https://www.vn.weber/files/vn/styles/1920x1080/public/pictures/2019-12/gach-op-tuong-bep-343.jpg.webp?itok=4q_ImdsT');
   background-size: cover;
   background-repeat: no-repeat;
   height: auto;
   font-family: 'Numans', sans-serif;
+	height:100vh;
   }
   
 img {
@@ -14,16 +15,18 @@ img {
 }
 
   .container{
-  height: auto;
-  align-content: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
   }
   
   .card{
-  height: auto;
-  margin-top: -130px;
-  margin-bottom: auto;
+  height: 650px;
   width: 480px;
-  background-color: rgba(0,0,0,0.8) !important;
+  background-color: rgba(0,0,0,0.5) !important;
+  margin-top: 100px;
   }
   
   .card-header h1{

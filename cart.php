@@ -121,7 +121,7 @@
                                                 }
                                                 else
                                                 {
-                                                    echo '<h1>Giỏ hàng trống</h1>';
+                                                    echo '<center><h1>Giỏ hàng trống</h1></center>';
                                                 }
                                             ?>
                                         </div>

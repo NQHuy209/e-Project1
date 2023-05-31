@@ -87,16 +87,18 @@ if (isset($_POST['compare']))
         {
             if (sizeof($_SESSION['compare']) >= 2)
             {
-                echo Notification('Chỉ được so sánh 2 sản phẩm.');
+                echo '<script>alert("Chỉ được so sánh 2 sản phẩm")</script>';
                 $temp = 1;
             }
         }
 
         if ($temp == 0)
         {
+            
 
             $_SESSION['compare'][] = array(
                 "id" => $_POST['id'],
+                "categories_id" => $_POST['categories_id'],
                 "img" => $_POST['img'],
                 "name" => $_POST['name'],
                 "price" => $_POST['price'],
@@ -112,18 +114,38 @@ if (isset($_POST['compare']))
             {
                 if ($_SESSION['compare'][0]['id'] == $_SESSION['compare'][$i]['id'])
                 {
-                    echo Notification('Sản phẩm đã có trong danh sách so sánh.');
+                    echo '<script>alert("Sản phẩm đã có trong danh sách so sánh")</script>';
                     unset($_SESSION['compare'][$i]);
                     break;
                 }
                 if ($_SESSION['compare'][0]['categories_id'] != $_SESSION['compare'][$i]['categories_id'])
                 {
-                    echo Notification('Phải so sánh sản phẩm cùng loại.');
+                    echo '<script>alert("Chỉ được so sánh 2 sản phẩm cùng loại")</script>';
                     unset($_SESSION['compare'][$i]);
                 }
             }
         }
     }
+// delete compare
+                            if (isset($_POST['delete']))
+                                {
+                                    if (isset($_SESSION['compare']))
+                                    {
+                                        for ($i = $_POST['index']; $i < sizeof($_SESSION['compare']); $i++)
+                                        {
+                                            $_SESSION['compare'][$i] = $_SESSION['compare'][$i+1];
+                                        }
+
+                                        unset($_SESSION['compare'][sizeof($_SESSION['compare']) - 1]);
+                                        if (sizeof($_SESSION['compare']) == 0)
+                                        {
+                                            unset($_SESSION['compare']);
+                                        }
+
+                                        header('location:compare.php');
+                                    }
+                                }
+    
 ?>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

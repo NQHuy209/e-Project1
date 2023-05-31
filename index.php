@@ -4,11 +4,7 @@
 
 
 		<section class="awe-section-1">
-			<!-- <section class="section_slider">
-				<div class="home-slider owl-carousel"> -->
-
-
-					<div class="item">
+			<div class="item">
 						<a href="#" title="La Imperial">
 							<picture>
 								<img src="images/home2.jpg"/>
@@ -16,8 +12,6 @@
 						</a>
 					</div>
 
-				<!-- </div>
-			</section> -->
 		</section>
 
 
@@ -192,13 +186,7 @@
 				<div class="container">
 					<div class="col-product-wrap">
 						<div class="title_module_main">
-							<!-- <h2>
-								<a href="/san-pham-noi-bat" title="Fridge">
-									<img class="product-wrap-icon" src="https://cdn-icons-png.flaticon.com/512/3605/3605991.png"
-										alt="La Imperial" />
-									Fridge
-								</a>
-							</h2> -->
+							
 						</div>
 
 
@@ -211,35 +199,6 @@
 
 						<div class="e-tabs2 not-dqtab ajax-tab-1" data-section="ajax-tab-1">
 							<div class="content">
-								<!-- <div class="tabs-title-ajax">
-
-									<ul class="tabs tabs-title tab-mobile clearfix hidden-md hidden-lg">
-										<li class="prev"><i class="fa fa-angle-left"></i></li>
-										<li class="tab-link tab-title  hidden-md hidden-lg current tab-titlexs"
-											data-tab="tab-1">
-
-											<span>Xem thêm</span>
-
-										</li>
-										<li class="next"><i class="fa fa-angle-right"></i></li>
-									</ul>
-
-
-									<ul class="tabs tabs-title ajax clearfix hidden-xs hidden-sm">
-
-										<li class="tab-link has-content" data-tab="tab-1" data-url="/thuc-pham-kho">
-											<span>Xem thêm</span>
-										</li>
-
-										 <li class="tab-link " data-tab="tab-2" data-url="/giai-khat">
-											<span>Giải khát</span>
-										</li>
-
-									</ul>
-								</div> -->
-
-
-
 								
 							</div>
 
@@ -532,50 +491,7 @@
 
 
 
-
-
-		
-		
-		<!-- Bizweb javascript -->
-		<script src="http://bizweb.dktcdn.net/100/351/180/themes/713646/assets/option-selectors.js?1677115832170"
-			type="text/javascript"></script>
-		<script src="http://bizweb.dktcdn.net/assets/themes_support/api.jquery.js" type="text/javascript"></script>
-
-
-		<script>
-
-			
-
-		<link rel="preload" as="script"
-			href="http://bizweb.dktcdn.net/100/351/180/themes/713646/assets/quickview.js?1677115832170" />
-		<script src="http://bizweb.dktcdn.net/100/351/180/themes/713646/assets/quickview.js?1677115832170"
-			type="text/javascript"></script>
-
-		<!-- Product detail JS,CSS -->
-
-
-
-			<!-- <script type="text/javascript">
-				WebFontConfig = {
-					google: { families: ['Roboto:400,500,700'] },
-					custom: {
-						families: ['FontAwesome'],
-						urls: ['https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css']
-					}
-				};
-				(function () {
-					var wf = document.createElement('script');
-					wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-					wf.type = 'text/javascript';
-					wf.async = 'true';
-					var s = document.getElementsByTagName('script')[0];
-					s.parentNode.insertBefore(wf, s);
-				})();
-			</script> 
-
-
-
-	</div>
+</div>
 </body>
 
 </html>

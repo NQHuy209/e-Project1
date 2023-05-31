@@ -32,19 +32,24 @@
     ?>
     <center>
     <form action="" method="POST">
+        <table>
         <h1>Chỉnh sửa sản phẩm</h1>
+            <tr>
+                <td><span>Tên sản phẩm: </span></td>
+                <td><input type="text" name="name" value="<?php echo $info[$_GET['id']][0]; ?>"></td>
+            </tr>
+            <tr>
+                <td><span>Giá: </span></td>
+                <td><input type="text" name="price" value="<?php echo $info[$_GET['id']][1]; ?>"></td>
+            </tr>
             <div>
-                <span>Tên sản phẩm: </span><input type="text" name="name" value="<?php echo $info[$_GET['id']][0]; ?>">
-            </div>
-            <div>
-                <span>Giá: </span><input type="text" name="price" value="<?php echo $info[$_GET['id']][1]; ?>">
-            </div>
-            <div>
-                <span>Thương hiệu </span><input type="text" name="brand" value="<?php echo $info[$_GET['id']][2]; ?>">
-            </div>
-            <div>
-                <button type="submit" name='edit' value="edit">Cập nhật</button>
-                <a href="homeSP.php"><button type="button">Cancel</button></a>
-            </div>
+                <td><span>Thương hiệu </span></td>
+                <td><input type="text" name="brand" value="<?php echo $info[$_GET['id']][2]; ?>"></td>
+            </tr>
+            <tr>
+                <td><button type="submit" name='edit' value="edit">Cập nhật</button></td>
+                <td><a href="homeSP.php"><button type="button">Cancel</button></a></td>
+            </tr>
+        </table>
     </form>
 </center>

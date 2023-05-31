@@ -14,70 +14,21 @@
 	</title>
 	<?php include "Model/connect_db.php"; ?>
 
+	
+	<!--Favicon -->
 
-	<!-- ================= Page description ================== -->
-
-	<meta name="description" content="123">
-
-	<!-- ================= Meta ================== -->
-
-	<meta name="keywords" content="ND Team, La Imperial, Mega Store" />
-
-
-	<link rel="canonical" href="https://nd-mart.mysapo.net/" />
-	<meta name='revisit-after' content='1 days' />
-	<meta name="robots" content="noodp,index,follow" />
-	<!-- ================= Favicon ================== -->
-
-	<link rel="icon" href="" type="image/x-icon" />
-
-	<!-- ================= Google Fonts ================== -->
-
-
-	<!-- Facebook Open Graph meta tags -->
-
-
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="La Imperial">
-	<meta property="og:image"
-		content="http://bizweb.dktcdn.net/100/351/180/themes/713646/assets/logo.png?1677115832170">
-	<meta property="og:image:secure_url"
-		content="https:http://bizweb.dktcdn.net/100/351/180/themes/713646/assets/logo.png?1677115832170">
-
-	<meta property="og:description" content="123">
-	<meta property="og:url" content="https://nd-mart.mysapo.net/">
-	<meta property="og:site_name" content="La Imperial">
-	<!-- Plugin CSS -->
-	<!-- <script>
-		var template = 'index';
-	</script> -->
+	<link rel="icon" href="images/logo.png" type="image/x-icon" />
 
 	<link rel="preload" as="style" type="text/css" href="css/scss2.css">
 	<link rel="preload" as="style" type="text/css" href="css/scss.css">
 	<!-- Build Main CSS -->
 	<link href="css/scss2.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/scss.css" rel="stylesheet" type="text/css" media="all" />
-	<link rel="stylesheet" href="stylecart.css">
+	<link href="css/stylecart.css" rel="stylesheet" >
 
 	<script src="http://bizweb.dktcdn.net/100/351/180/themes/713646/assets/jquery.js?1677115832170"
 		type="text/javascript"></script>
 	<script src="/dist/js/stats.min.js?v=69e02f0"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </head>
 
@@ -181,34 +132,7 @@
 											<span class="cartCount count_item_pr" id="cart-total"></span>
 										</a>
 									</div>
-									<div class="top-cart-content">
-										<ul id="cart-sidebar" class="mini-products-list count_li">
-											<li class="list-item">
-												<ul></ul>
-											</li>
-											<li class="action">
-												<ul>
-													<li class="li-fix-1">
-														<div class="top-subtotal">
-															Tổng tiền thanh toán:
-															<span class="price"></span>
-														</div>
-													</li>
-													<li class="li-fix-2">
-														<div class="actions">
-															<a href="/cart" class="btn btn-primary" title="Giỏ hàng">
-																<span>Giỏ hàng</span>
-															</a>
-															<a href="/checkout" class="btn btn-checkout btn-gray"
-																title="Thanh toán">
-																<span>Thanh toán</span>
-															</a>
-														</div>
-													</li>
-												</ul>
-											</li>
-										</ul>
-									</div>
+									
 								</div>
 							</div>
 
@@ -264,8 +188,7 @@
 
 
 										<li class="nav_item lv1 li_check">
-											<a href="category.php?id=1" title="Fridge">Fridge
-												<!-- <i class="fa fa-angle-right"></i> -->
+											<a href="category.php?id=1" title="Fridge">Tủ Lạnh
 											</a>
 										</li>
 
@@ -274,8 +197,7 @@
 
 
 										<li class="nav_item lv1 li_check">
-											<a href="category.php?id=2" title="Dishwasher">Dishwasher
-												<!-- <i class="fa fa-angle-right"></i> -->
+											<a href="category.php?id=2" title="Dishwasher">Máy rửa bát
 											</a>
 										</li>
 
@@ -284,7 +206,7 @@
 
 
 										<li class="nav_item lv1 li_check">
-											<a href="category.php?id=3" title="Introduction cooker">Introduction cooker
+											<a href="category.php?id=3" title="Introduction cooker">Bếp Từ
 											</a>
 										</li>
 
@@ -293,7 +215,7 @@
 
 
 										<li class="nav_item lv1 li_check">
-											<a href="category.php?id=4" title="Microwave">Microwave
+											<a href="category.php?id=4" title="Microwave">Lò vi sóng
 											</a>
 										</li>
 
@@ -302,7 +224,7 @@
 
 
 										<li class="nav_item lv1 li_check">
-											<a href="category.php?id=5" title="Television">Television
+											<a href="category.php?id=5" title="Television">Tivi
 											</a>
 										</li>
 
@@ -311,7 +233,7 @@
 
 
 										<li class="nav_item lv1 li_check">
-											<a href="category.php?id=6" title="Air condition">Air condition
+											<a href="category.php?id=6" title="Air condition">Điều hòa
 											</a>
 										</li>
 

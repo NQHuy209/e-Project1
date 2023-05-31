@@ -13,17 +13,15 @@
 	
 </head>
 <body>
-<img src="images/logo.png">
 
 <div class="container">
-	<div class="d-flex justify-content-center h-100">
 		<div class="card">
 			<div class="card-header">
 				<h1>Login Page</h1>
 				
 			</div>
 			<div class="card-body">
-            <center>
+                <center>
 				<form action="" method="post">
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
@@ -40,14 +38,13 @@
 					</div>
 					<p style="color:red;"><?php echo isset($error['password']) ? $error['password'] : null ?></p>
 			</center>
-					<div  class="checkbox">
-						<input type="checkbox">
-						<span>Remember me</span>
-					</div>
-			<center>
+			
+					
+            <center>
 					<div class="form-group">
 						<input type="submit" name="login" value="Login" class="btn btn-warning login_input" >
 					</div>
+				</form>
             </center>
 			</div>
 
@@ -58,7 +55,7 @@
 				
 			</div>
 		</div>
-	</div>
+	
 </div>
 </body>
 </html>

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <style type="text/css">
             table{
-                width: 800px;
+                width: 1200px;
                 margin: auto;
                 text-align: center;
                 overflow: auto;
@@ -42,9 +42,13 @@
             <thead>
                 <th>ID</th>
                 <th>CategoriesID</th>
+                <th>Ảnh</th>
                 <th>Tên Sản Phẩm</th>
                 <th>Giá</th>
                 <th>Thương Hiệu</th>
+                <th>Thông tin</th>
+                <th>File HTML</th>
+                <th>File Word</th>
                 <th>Edit</th>
                 <th>Delete</th>
             </thead>
@@ -63,9 +67,13 @@
                             <tr>
                                 <td>'.$row['id'].'</td>
                                 <td>'.$row['categories_id'].'</td>
+                                <td>'.$row['img'].'</td>
                                 <td>'.$row['name'].'</td>
                                 <td>'.$row['price'].'</td>
                                 <td>'.$row['brand'].'</td>
+                                <td>'.$row['information'].'</td>
+                                <td>'.$row['html'].'</td>
+                                <td>'.$row['word'].'</td>
                                 <td><a href="controller/product/editSP.php?id='.$row['id'].'">Edit</a></td>
                                 <td><a href="controller/product/deleteSP.php?id='.$row['id'].'"> Delete</a></td>
                             </tr>';
@@ -75,7 +83,7 @@
             ?>
             <tfoot>
                     <td colspan="8">
-                        <a href="controller/product/addSP.php"><button id="button">ADD</button></a>
+                        <a href="controller/product/addSP.php"><button style="float: left;" id="button">ADD</button></a>
                     </td>
             </tfoot>
         </table>

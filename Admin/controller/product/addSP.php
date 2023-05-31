@@ -30,22 +30,30 @@
     }
 
     ?>
+    <center>
     <form action="" method="POST">
+        <table>
         <h1>Thêm Sản Phẩm</h1>
-            <div>
-                <span>Categories ID: </span><input type="text" name="categories_id">
-            </div>
-            <div>
-                <span>Tên: </span><input type="number" name="name">
-            </div>
-            <div>
-                <span>Giá: </span><input type="text" name="price">
-            </div>
-            <div>
-                <span>Thương Hiệu: </span> <input type="text" name="brand">
-            </div>
-            <div>
-                <input type="submit" name='add' value='Add'>
-                <a href="homeSP.php"><button type="button">Cancel</button></a>
-            </div>
+            <tr>
+                <td><span>Categories ID: </span></td>
+                <td><input type="text" name="categories_id"></td>
+            </tr>
+            <tr>
+                <td><span>Tên: </span></td>
+                <td><input type="number" name="name"></td>
+            </tr>
+            <tr>
+                <td><span>Giá: </span></td>
+                <td><input type="text" name="price"></td>
+            </tr>
+            <tr>
+                <td><span>Thương Hiệu: </span></td> 
+                <td><input type="text" name="brand"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" name='add' value='Add'></td>
+                <td><a href="homeSP.php"><button type="button">Cancel</button></a></td>
+            </tr>
+        </table>
     </form>
+    </center>

@@ -9,18 +9,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <?php
+    include_once "config/connect_db.php";
+
+    if(isset($_GET['logout'])) {
+      unset($_SESSION['user']);
+      header('location:../index.php');
+  }
+  ?>
 <div class="sidebar">
         <div class="logo-details">
           <i class='bx bxl-c-plus-plus'></i>
           <span class="logo_name">ADMIN</span>
         </div>
           <ul class="nav-links">
-            <li>
-              <a href="index.php">
-                <i class='bx bx-grid-alt' ></i>
-                <span class="links_name">Dashboard</span>
-              </a>
-            </li>
             <li>
               <a href="categories.php">
                 <i class='bx bx-box' ></i>
@@ -47,7 +49,7 @@
             </li>
             
             <li class="log_out">
-              <a href="#">
+              <a href="?logout">
                 <i class='bx bx-log-out'></i>
                 <span class="links_name">Log out</span>
               </a>

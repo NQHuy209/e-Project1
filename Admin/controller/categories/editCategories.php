@@ -25,14 +25,18 @@
     ?>
     <center>
     <form action="" method="POST">
+        <table class="table">
         <h1>Chỉnh sửa danh mục</h1>
-            <div>
-                <span>Categories ID: </span><input type="text" name="categories_id">
-            </div>
-            <div>
-                <span>Tên: </span><input type="number" name="name">
-            </div>
+            <tr>
+                <td><span>Categories ID: </span></td>
+                <td><input type="text" name="categories_id"></td>
+            </tr>
+            <tr>
+                <td><span>Tên: </span></td>
+                <td><input type="number" name="name"></td>
+            </tr>
+        </table>
         </form>
-</center>
+    </center>
 
     

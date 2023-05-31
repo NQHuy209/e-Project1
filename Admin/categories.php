@@ -25,8 +25,8 @@
               <tr>
                   <td>'.$row['id'].'</td>
                   <td>'.$row['name'].'</td>
-                  <td><a href="controller/categories/deleteCategories?id='.$row['id'].'"> Delete</a></td>
-                  <td><a href="controller/categories/editCategories?id='.$row['id'].'"> Edit</a></td>
+                  <td><a href="controller/categories/deleteCategories.php?id="'.$row['id'].'"> Delete</a></td>
+                  <td><a href="controller/categories/editCategories.php?id="'.$row['id'].'"> Edit</a></td>
               </tr>';
           }
       }

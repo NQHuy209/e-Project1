@@ -118,17 +118,6 @@
 
 
 
-
-
-										<!-- <li>
-											<a href="#" title="La Imperial">
-												<img class="lazyload img-responsive"
-													src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-													data-src="http://bizweb.dktcdn.net/100/351/180/themes/713646/assets/image_payment_5.jpg?1677115832170"
-													alt="La Imperial">
-											</a>
-										</li> -->
-
 									</ul>
 								</div>
 

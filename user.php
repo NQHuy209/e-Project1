@@ -13,7 +13,7 @@
 						<span class="mr_lr">&nbsp;/&nbsp;</span>
 					</li>
 					
-					<li><strong ><span>Thay khách hàng</span></strong></li>
+					<li><strong ><span>Khách hàng</span></strong></li>
 					
 				</ul>
 			</div>
@@ -54,7 +54,7 @@
 							<p><strong>Họ tên: </strong>'.$_SESSION['user']['full_name'].'</p>
 							<p><strong>Email: </strong>'.$_SESSION['user']['email'].'</p>
 							<p><strong>SĐT: </strong>'.$_SESSION['user']['phone_number'].'</p>
-							<p><strong>Address: </strong>'.$_SESSION['user']['address'].'</p>
+							<p><strong>Địa Chỉ: </strong>'.$_SESSION['user']['address'].'</p>
 						</div>
 					</div>';
 				}
@@ -69,15 +69,15 @@
 								<div class="dashboard">
 
 									<div class="recent-orders">
-										<div class="table-responsive-block tab-all" style="overflow-x:auto;">
-											<table class="table table-cart table-order" id="my-orders-table">
-												<thead class="thead-default">
+										<div class="table-responsive-block tab-all" style="overflow-x:auto; border: 1px solid;">
+											<table class="table table-cart table-order" >
+												<thead class="thead-default" >
 													<tr>
-														<th>Đơn hàng</th>
-														<th>Ngày</th>
-														<th>Địa chỉ</th>
-														<th>Giá trị đơn hàng</th>
-														<th>TT vận chuyển</th>
+														<th  style="border: 1px solid;">Đơn hàng</th>
+														<th  style="border: 1px solid;">Ngày</th>
+														<th  style="border: 1px solid;">Địa chỉ</th>
+														<th  style="border: 1px solid;">Giá trị đơn hàng</th>
+														<th  style="border: 1px solid;">TT vận chuyển</th>
 													</tr>
 												</thead>
 												<tbody>';
@@ -87,11 +87,11 @@
                                                     {
 														echo
 														'<tr>
-															<td>'.$order['product_name'].'</td>
-															<td>'.$order['date'].'</td>
-															<td>'.$order['address'].'</td>
-															<td>'.number_format($order['price']).'</td>
-															<td>'.$order['status'].'</td>
+															<td style="border: 1px solid;">'.$order['product_name'].'</td>
+															<td style="border: 1px solid;">'.$order['date'].'</td>
+															<td style="border: 1px solid;">'.$order['address'].'</td>
+															<td style="border: 1px solid;">'.number_format($order['price']).'</td>
+															<td style="border: 1px solid;">'.$order['status'].'</td>
 														</tr>';
 													}
 												}

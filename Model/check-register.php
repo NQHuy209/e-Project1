@@ -67,7 +67,7 @@ require "connect_db.php";
             $name = $_POST['fullname'];
             $user = $_POST['username'];
             $pass = md5($_POST['password']);
-            $mail = $_POST['email'];
+            $email = $_POST['email'];
             $phone = $_POST['phone_number'];
             $address = $_POST['address'];
             if ($stmt->execute())
