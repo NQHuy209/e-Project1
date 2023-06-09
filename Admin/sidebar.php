@@ -4,57 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="demo5.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <title>Document</title>
 </head>
 <body>
-  <?php
-    include_once "config/connect_db.php";
-
-    if(isset($_GET['logout'])) {
-      unset($_SESSION['user']);
-      header('location:../index.php');
-  }
-  ?>
-<div class="sidebar">
-        <div class="logo-details">
-          <i class='bx bxl-c-plus-plus'></i>
-          <span class="logo_name">ADMIN</span>
-        </div>
-          <ul class="nav-links">
+<div id="sidebar">
+          <header>
+            <a href="#">Admin</a>
+          </header>
+          <ul class="nav">
             <li>
               <a href="categories.php">
-                <i class='bx bx-box' ></i>
-                <span class="links_name">Categories</span>
+              <i class="zmdi zmdi-view-list"></i> Categories
               </a>
             </li>
             <li>
-              <a href="product.php" >
-                <i class='bx bx-list-ul' ></i>
-                <span class="links_name">Product</span>
+              <a href="product.php">
+              <i class="zmdi zmdi-widgets"></i> Product
               </a>
             </li>
             <li>
               <a href="ship.php">
-                <i class='bx bx-coin-stack' ></i>
-                <span class="links_name">Ship</span>
+              <i class="zmdi zmdi-truck"></i> Ship
               </a>
             </li>
             <li>
               <a href="user.php">
-                <i class='bx bx-book-alt' ></i>
-                <span class="links_name">User</span>
+              <i class="zmdi zmdi-account"></i> User
               </a>
-            </li>
-            
-            <li class="log_out">
-              <a href="?logout">
-                <i class='bx bx-log-out'></i>
-                <span class="links_name">Log out</span>
-              </a>
-            </li>
           </ul>
-  </div>
- </body>
+        </div>
+</body>
 </html>

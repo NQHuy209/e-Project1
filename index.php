@@ -5,7 +5,7 @@
 
 		<section class="awe-section-1">
 			<div class="item">
-						<a href="#" title="La Imperial">
+						<a href="" title="La Imperial">
 							<picture>
 								<img src="images/home2.jpg"/>
 							</picture>
@@ -25,7 +25,7 @@
 
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 							<div class="banner-hover">
-								<a href="#" title="La Imperial"></a>
+								<a href="" title="La Imperial"></a>
 								<img class="lazyload img-responsive lazyload_head"
 									src="images/banner_beptu3dasua.jpg"
 									alt="La Imperial">
@@ -37,7 +37,7 @@
 
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 							<div class="banner-hover">
-								<a href="#" title="La Imperial"></a>
+								<a href="" title="La Imperial"></a>
 								<img class="lazyload img-responsive lazyload_head"
 									src="images/banner_mayruabat2dasua.jpg"
 									alt="La Imperial">
@@ -49,7 +49,7 @@
 
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 							<div class="banner-hover">
-								<a href="#" title="La Imperial"></a>
+								<a href="" title="La Imperial"></a>
 								<img class="lazyload img-responsive lazyload_head"
 									src="images/banner_lovisong2dasua.png"
 									alt="La Imperial">

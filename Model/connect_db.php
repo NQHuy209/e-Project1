@@ -20,7 +20,7 @@ if (isset($_POST['push'])) {
     $phone_number = $_SESSION['user']['phone_number'];
     $address = $_SESSION['user']['address'];
     $date = date('Y-m-d H:i:s');
-    $status = 'Đang giao hàng';
+    $status = 'Chờ xác nhận';
     if ($stmt->execute() === TRUE)
     {
         unset($_SESSION['cart']);
@@ -60,7 +60,7 @@ if (isset($_POST['add'])){
         }
         else
         {
-            echo '<script>alert("Xin vui lòng đăng nhập để mua hàng")</script>';
+            echo '<script>alert("Xin vui lòng đăng nhập để mua hàng ")</script>';
         }
 }
 

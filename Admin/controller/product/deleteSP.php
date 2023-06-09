@@ -3,8 +3,9 @@
     $con = mysqli_connect('localhost', 'root', '12345678', 'project');
     $sql = "DELETE FROM product WHERE id='".$id."'";
     if ($result = mysqli_query($con,$sql)) {
-        echo "<h1>Xóa sản phẩm  thành công Click vào <a href='homeSP.php'>đây</a> để về trang danh sách</h1>";
+        echo '<script>alert("Xóa sản phẩm  thành công")</script>';
+        header("location:../../product.php");
     }else{
-        echo "<h1>Có lỗi xảy ra Click vào <a href='homeSP.php'>đây</a> để về trang danh sách</h1>";
+        echo '<script>alert("Có lỗi xảy ra")</script>';
     }
 ?>

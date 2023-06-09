@@ -4,11 +4,6 @@
 	
 ?>
 
-			
-
-
-
-
 <section class="bread-crumb">
 	<span class="crumb-border"></span>
 	<div class="container">
@@ -33,10 +28,6 @@
 							}
 						}
 						?>
-					
-					
-					
-					
 				</ul>
 			</div>
 		</div>
@@ -69,7 +60,7 @@
 									<div class="large-image">
 										<a onclick="return false;" href="//bizweb.dktcdn.net/thumb/1024x1024/100/351/180/products/15-8811e0ca-76b5-473d-a9b4-4de9cb7745b2.jpg?v=1554012816640" class="large_image_url" data-rel="prettyPhoto[product-gallery]">
 											
-											<img id="zoom_01" class="img-responsive center-block" src="images/' . $sp['img'] . '" alt="">
+											<img class="img-responsive center-block" src="images/' . $sp['img'] . '" alt="">
 											
 										</a>						
 										<div class="hidden">

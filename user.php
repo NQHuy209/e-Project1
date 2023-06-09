@@ -69,7 +69,7 @@
 								<div class="dashboard">
 
 									<div class="recent-orders">
-										<div class="table-responsive-block tab-all" style="overflow-x:auto; border: 1px solid;">
+										<div class="table-responsive-block tab-all" style="overflow-x:auto;">
 											<table class="table table-cart table-order" >
 												<thead class="thead-default" >
 													<tr>
