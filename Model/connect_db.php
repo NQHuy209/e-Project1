@@ -61,6 +61,7 @@ if (isset($_POST['add'])){
         else
         {
             echo '<script>alert("Xin vui lòng đăng nhập để mua hàng ")</script>';
+            header('location:login.php');
         }
 }
 

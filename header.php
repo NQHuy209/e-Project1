@@ -142,7 +142,7 @@
 									<p>
 										Liên hệ
 									</p>
-									<a style="text-decoration: none	;" href="tel:0975729999">
+									<a style="text-decoration: none	;">
 										0922552868
 									</a>
 								</div>
@@ -236,6 +236,18 @@
 											<a href="category.php?id=6" title="Air condition">Điều hòa
 											</a>
 										</li>
+
+										<li class="nav_item lv1 li_check">
+											<a href="category.php?id=7" title="Smartphone">Dien Thoai
+											</a>
+										</li>
+
+										<li class="nav_item lv1 li_check">
+											<a href="category.php?id=8" title="Laptop"> macbook
+											</a>
+										</li>
+										
+
 
 
 
